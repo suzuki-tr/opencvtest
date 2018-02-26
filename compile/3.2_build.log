@@ -1,0 +1,979 @@
+(cv) suzuki@dynabook:~/opencv/opencv-3.2.0/build$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_SHARED_LIBS=NO -D BUILD_opencv_python2=ON -D BUILD_opencv_python3=ON -D BUILD_opencv_ml=OFF -D BUILD_opencv_flann=OFF -D BUILD_opencv_features2d=OFF -D BUILD_opencv_photo=OFF -D BUILD_opencv_objdetect=OFF -D BUILD_opencv_video=OFF -D BUILD_opencv_videoio=OFF -D BUILD_opencv_ts=OFF -D BUILD_opencv_calib3d=OFF -D CMAKE_INSTALL_PREFIX=/home/suzuki/opencv/3.2-1 ..
+-- The CXX compiler identification is GNU 5.4.0
+-- The C compiler identification is GNU 5.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detected version of GNU GCC: 54 (504)
+-- Performing Test HAVE_CXX_FSIGNED_CHAR
+-- Performing Test HAVE_CXX_FSIGNED_CHAR - Success
+-- Performing Test HAVE_C_FSIGNED_CHAR
+-- Performing Test HAVE_C_FSIGNED_CHAR - Success
+-- Performing Test HAVE_CXX_W
+-- Performing Test HAVE_CXX_W - Success
+-- Performing Test HAVE_C_W
+-- Performing Test HAVE_C_W - Success
+-- Performing Test HAVE_CXX_WALL
+-- Performing Test HAVE_CXX_WALL - Success
+-- Performing Test HAVE_C_WALL
+-- Performing Test HAVE_C_WALL - Success
+-- Performing Test HAVE_CXX_WERROR_RETURN_TYPE
+-- Performing Test HAVE_CXX_WERROR_RETURN_TYPE - Success
+-- Performing Test HAVE_C_WERROR_RETURN_TYPE
+-- Performing Test HAVE_C_WERROR_RETURN_TYPE - Success
+-- Performing Test HAVE_CXX_WERROR_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_CXX_WERROR_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_C_WERROR_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_C_WERROR_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_CXX_WERROR_ADDRESS
+-- Performing Test HAVE_CXX_WERROR_ADDRESS - Success
+-- Performing Test HAVE_C_WERROR_ADDRESS
+-- Performing Test HAVE_C_WERROR_ADDRESS - Success
+-- Performing Test HAVE_CXX_WERROR_SEQUENCE_POINT
+-- Performing Test HAVE_CXX_WERROR_SEQUENCE_POINT - Success
+-- Performing Test HAVE_C_WERROR_SEQUENCE_POINT
+-- Performing Test HAVE_C_WERROR_SEQUENCE_POINT - Success
+-- Performing Test HAVE_CXX_WFORMAT
+-- Performing Test HAVE_CXX_WFORMAT - Success
+-- Performing Test HAVE_C_WFORMAT
+-- Performing Test HAVE_C_WFORMAT - Success
+-- Performing Test HAVE_CXX_WERROR_FORMAT_SECURITY
+-- Performing Test HAVE_CXX_WERROR_FORMAT_SECURITY - Success
+-- Performing Test HAVE_C_WERROR_FORMAT_SECURITY
+-- Performing Test HAVE_C_WERROR_FORMAT_SECURITY - Success
+-- Performing Test HAVE_CXX_WMISSING_DECLARATIONS
+-- Performing Test HAVE_CXX_WMISSING_DECLARATIONS - Success
+-- Performing Test HAVE_C_WMISSING_DECLARATIONS
+-- Performing Test HAVE_C_WMISSING_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_WMISSING_PROTOTYPES
+-- Performing Test HAVE_CXX_WMISSING_PROTOTYPES - Failed
+-- Performing Test HAVE_C_WMISSING_PROTOTYPES
+-- Performing Test HAVE_C_WMISSING_PROTOTYPES - Success
+-- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES
+-- Performing Test HAVE_CXX_WSTRICT_PROTOTYPES - Failed
+-- Performing Test HAVE_C_WSTRICT_PROTOTYPES
+-- Performing Test HAVE_C_WSTRICT_PROTOTYPES - Success
+-- Performing Test HAVE_CXX_WUNDEF
+-- Performing Test HAVE_CXX_WUNDEF - Success
+-- Performing Test HAVE_C_WUNDEF
+-- Performing Test HAVE_C_WUNDEF - Success
+-- Performing Test HAVE_CXX_WINIT_SELF
+-- Performing Test HAVE_CXX_WINIT_SELF - Success
+-- Performing Test HAVE_C_WINIT_SELF
+-- Performing Test HAVE_C_WINIT_SELF - Success
+-- Performing Test HAVE_CXX_WPOINTER_ARITH
+-- Performing Test HAVE_CXX_WPOINTER_ARITH - Success
+-- Performing Test HAVE_C_WPOINTER_ARITH
+-- Performing Test HAVE_C_WPOINTER_ARITH - Success
+-- Performing Test HAVE_CXX_WSHADOW
+-- Performing Test HAVE_CXX_WSHADOW - Success
+-- Performing Test HAVE_C_WSHADOW
+-- Performing Test HAVE_C_WSHADOW - Success
+-- Performing Test HAVE_CXX_WSIGN_PROMO
+-- Performing Test HAVE_CXX_WSIGN_PROMO - Success
+-- Performing Test HAVE_C_WSIGN_PROMO
+-- Performing Test HAVE_C_WSIGN_PROMO - Failed
+-- Performing Test HAVE_CXX_WNO_NARROWING
+-- Performing Test HAVE_CXX_WNO_NARROWING - Success
+-- Performing Test HAVE_C_WNO_NARROWING
+-- Performing Test HAVE_C_WNO_NARROWING - Success
+-- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR - Success
+-- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR
+-- Performing Test HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR - Failed
+-- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+-- Performing Test HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Failed
+-- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS
+-- Performing Test HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS - Failed
+-- Performing Test HAVE_CXX_WNO_COMMENT
+-- Performing Test HAVE_CXX_WNO_COMMENT - Success
+-- Performing Test HAVE_C_WNO_COMMENT
+-- Performing Test HAVE_C_WNO_COMMENT - Success
+-- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION
+-- Performing Test HAVE_C_FDIAGNOSTICS_SHOW_OPTION - Success
+-- Performing Test HAVE_CXX_WNO_LONG_LONG
+-- Performing Test HAVE_CXX_WNO_LONG_LONG - Success
+-- Performing Test HAVE_C_WNO_LONG_LONG
+-- Performing Test HAVE_C_WNO_LONG_LONG - Success
+-- Performing Test HAVE_CXX_PTHREAD
+-- Performing Test HAVE_CXX_PTHREAD - Success
+-- Performing Test HAVE_C_PTHREAD
+-- Performing Test HAVE_C_PTHREAD - Success
+-- Performing Test HAVE_CXX_FOMIT_FRAME_POINTER
+-- Performing Test HAVE_CXX_FOMIT_FRAME_POINTER - Success
+-- Performing Test HAVE_C_FOMIT_FRAME_POINTER
+-- Performing Test HAVE_C_FOMIT_FRAME_POINTER - Success
+-- Performing Test HAVE_CXX_MSSE
+-- Performing Test HAVE_CXX_MSSE - Success
+-- Performing Test HAVE_C_MSSE
+-- Performing Test HAVE_C_MSSE - Success
+-- Performing Test HAVE_CXX_MSSE2
+-- Performing Test HAVE_CXX_MSSE2 - Success
+-- Performing Test HAVE_C_MSSE2
+-- Performing Test HAVE_C_MSSE2 - Success
+-- Performing Test HAVE_CXX_MNO_AVX
+-- Performing Test HAVE_CXX_MNO_AVX - Success
+-- Performing Test HAVE_C_MNO_AVX
+-- Performing Test HAVE_C_MNO_AVX - Success
+-- Performing Test HAVE_CXX_MSSE3
+-- Performing Test HAVE_CXX_MSSE3 - Success
+-- Performing Test HAVE_C_MSSE3
+-- Performing Test HAVE_C_MSSE3 - Success
+-- Performing Test HAVE_CXX_MNO_SSSE3
+-- Performing Test HAVE_CXX_MNO_SSSE3 - Success
+-- Performing Test HAVE_C_MNO_SSSE3
+-- Performing Test HAVE_C_MNO_SSSE3 - Success
+-- Performing Test HAVE_CXX_MNO_SSE4_1
+-- Performing Test HAVE_CXX_MNO_SSE4_1 - Success
+-- Performing Test HAVE_C_MNO_SSE4_1
+-- Performing Test HAVE_C_MNO_SSE4_1 - Success
+-- Performing Test HAVE_CXX_MNO_SSE4_2
+-- Performing Test HAVE_CXX_MNO_SSE4_2 - Success
+-- Performing Test HAVE_C_MNO_SSE4_2
+-- Performing Test HAVE_C_MNO_SSE4_2 - Success
+-- Performing Test HAVE_CXX_FFUNCTION_SECTIONS
+-- Performing Test HAVE_CXX_FFUNCTION_SECTIONS - Success
+-- Performing Test HAVE_C_FFUNCTION_SECTIONS
+-- Performing Test HAVE_C_FFUNCTION_SECTIONS - Success
+-- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN
+-- Performing Test HAVE_CXX_FVISIBILITY_HIDDEN - Success
+-- Performing Test HAVE_C_FVISIBILITY_HIDDEN
+-- Performing Test HAVE_C_FVISIBILITY_HIDDEN - Success
+-- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN
+-- Performing Test HAVE_CXX_FVISIBILITY_INLINES_HIDDEN - Success
+-- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN
+-- Performing Test HAVE_C_FVISIBILITY_INLINES_HIDDEN - Failed
+-- FP16: Feature disabled
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Found ZLIB: /home/suzuki/anaconda3/envs/cv/lib/libz.so (found suitable version "1.2.11", minimum required is "1.2.3") 
+-- Found TIFF: /home/suzuki/anaconda3/lib/libtiff.so (found version "4.0.9") 
+-- Found JPEG: /home/suzuki/anaconda3/lib/libjpeg.so  
+-- Performing Test HAVE_C_WNO_UNUSED_VARIABLE
+-- Performing Test HAVE_C_WNO_UNUSED_VARIABLE - Success
+-- Performing Test HAVE_C_WNO_UNUSED_FUNCTION
+-- Performing Test HAVE_C_WNO_UNUSED_FUNCTION - Success
+-- Performing Test HAVE_C_WNO_SHADOW
+-- Performing Test HAVE_C_WNO_SHADOW - Success
+-- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED
+-- Performing Test HAVE_C_WNO_MAYBE_UNINITIALIZED - Success
+-- Could NOT find Jasper (missing:  JASPER_LIBRARIES JASPER_INCLUDE_DIR) 
+-- Performing Test HAVE_C_WNO_IMPLICIT_FUNCTION_DECLARATION
+-- Performing Test HAVE_C_WNO_IMPLICIT_FUNCTION_DECLARATION - Success
+-- Performing Test HAVE_C_WNO_UNINITIALIZED
+-- Performing Test HAVE_C_WNO_UNINITIALIZED - Success
+-- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES
+-- Performing Test HAVE_C_WNO_MISSING_PROTOTYPES - Success
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_PARAMETER
+-- Performing Test HAVE_C_WNO_UNUSED_BUT_SET_PARAMETER - Success
+-- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS
+-- Performing Test HAVE_C_WNO_MISSING_DECLARATIONS - Success
+-- Performing Test HAVE_C_WNO_UNUSED
+-- Performing Test HAVE_C_WNO_UNUSED - Success
+-- Performing Test HAVE_C_WNO_SIGN_COMPARE
+-- Performing Test HAVE_C_WNO_SIGN_COMPARE - Success
+-- Performing Test HAVE_C_WNO_STRICT_OVERFLOW
+-- Performing Test HAVE_C_WNO_STRICT_OVERFLOW - Success
+-- Performing Test HAVE_C_WNO_UNUSED_PARAMETER
+-- Performing Test HAVE_C_WNO_UNUSED_PARAMETER - Success
+-- Found ZLIB: /home/suzuki/anaconda3/envs/cv/lib/libz.so (found version "1.2.11") 
+-- Found PNG: /home/suzuki/anaconda3/lib/libpng.so (found version "1.6.34") 
+-- Looking for /home/suzuki/anaconda3/include/libpng/png.h
+-- Looking for /home/suzuki/anaconda3/include/libpng/png.h - not found
+-- Looking for semaphore.h
+-- Looking for semaphore.h - found
+-- Performing Test HAVE_CXX_WNO_SHADOW
+-- Performing Test HAVE_CXX_WNO_SHADOW - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED
+-- Performing Test HAVE_CXX_WNO_UNUSED - Success
+-- Performing Test HAVE_CXX_WNO_SIGN_COMPARE
+-- Performing Test HAVE_CXX_WNO_SIGN_COMPARE - Success
+-- Performing Test HAVE_CXX_WNO_UNDEF
+-- Performing Test HAVE_CXX_WNO_UNDEF - Success
+-- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS
+-- Performing Test HAVE_CXX_WNO_MISSING_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_WNO_UNINITIALIZED
+-- Performing Test HAVE_CXX_WNO_UNINITIALIZED - Success
+-- Performing Test HAVE_CXX_WNO_SWITCH
+-- Performing Test HAVE_CXX_WNO_SWITCH - Success
+-- Performing Test HAVE_CXX_WNO_PARENTHESES
+-- Performing Test HAVE_CXX_WNO_PARENTHESES - Success
+-- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS
+-- Performing Test HAVE_CXX_WNO_ARRAY_BOUNDS - Success
+-- Performing Test HAVE_CXX_WNO_EXTRA
+-- Performing Test HAVE_CXX_WNO_EXTRA - Success
+-- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS
+-- Performing Test HAVE_CXX_WNO_DEPRECATED_DECLARATIONS - Success
+-- Performing Test HAVE_CXX_WNO_MISLEADING_INDENTATION
+-- Performing Test HAVE_CXX_WNO_MISLEADING_INDENTATION - Failed
+-- Checking for module 'gtk+-3.0'
+--   No package 'gtk+-3.0' found
+-- Checking for module 'gtk+-2.0'
+--   No package 'gtk+-2.0' found
+-- Checking for module 'gthread-2.0'
+--   No package 'gthread-2.0' found
+-- Checking for module 'gstreamer-base-1.0'
+--   No package 'gstreamer-base-1.0' found
+-- Checking for module 'gstreamer-video-1.0'
+--   No package 'gstreamer-video-1.0' found
+-- Checking for module 'gstreamer-app-1.0'
+--   No package 'gstreamer-app-1.0' found
+-- Checking for module 'gstreamer-riff-1.0'
+--   No package 'gstreamer-riff-1.0' found
+-- Checking for module 'gstreamer-pbutils-1.0'
+--   No package 'gstreamer-pbutils-1.0' found
+-- Checking for module 'gstreamer-base-0.10'
+--   No package 'gstreamer-base-0.10' found
+-- Checking for module 'gstreamer-video-0.10'
+--   No package 'gstreamer-video-0.10' found
+-- Checking for module 'gstreamer-app-0.10'
+--   No package 'gstreamer-app-0.10' found
+-- Checking for module 'gstreamer-riff-0.10'
+--   No package 'gstreamer-riff-0.10' found
+-- Checking for module 'gstreamer-pbutils-0.10'
+--   No package 'gstreamer-pbutils-0.10' found
+-- Checking for module 'libdc1394-2'
+--   No package 'libdc1394-2' found
+-- Checking for module 'libdc1394'
+--   No package 'libdc1394' found
+-- Looking for linux/videodev.h
+-- Looking for linux/videodev.h - not found
+-- Looking for linux/videodev2.h
+-- Looking for linux/videodev2.h - found
+-- Looking for sys/videoio.h
+-- Looking for sys/videoio.h - not found
+-- Checking for modules 'libavcodec;libavformat;libavutil;libswscale'
+--   No package 'libavcodec' found
+--   No package 'libavformat' found
+--   No package 'libavutil' found
+--   No package 'libswscale' found
+-- Checking for module 'libavresample'
+--   No package 'libavresample' found
+-- Checking for module 'libgphoto2'
+--   No package 'libgphoto2' found
+-- ICV: Unpacking ippicv_linux_20151201.tgz to /home/suzuki/opencv/opencv-3.2.0/build/3rdparty/ippicv...
+-- ICV: Package successfully downloaded
+-- found IPP (ICV version): 9.0.1 [9.0.1]
+-- at: /home/suzuki/opencv/opencv-3.2.0/build/3rdparty/ippicv/ippicv_lnx
+-- Could not find OpenBLAS include. Turning OpenBLAS_FOUND off
+-- Could not find OpenBLAS lib. Turning OpenBLAS_FOUND off
+-- Could NOT find Atlas (missing:  Atlas_CBLAS_INCLUDE_DIR Atlas_CLAPACK_INCLUDE_DIR Atlas_CBLAS_LIBRARY Atlas_BLAS_LIBRARY Atlas_LAPACK_LIBRARY) 
+-- Could NOT find Doxygen (missing:  DOXYGEN_EXECUTABLE) 
+-- Found PythonInterp: /home/suzuki/anaconda3/envs/cv/bin/python2.7 (found suitable version "2.7.14", minimum required is "2.7") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable exact version "2.7.14") 
+-- Found PythonInterp: /home/suzuki/anaconda3/bin/python3 (found suitable version "3.6.4", minimum required is "3.4") 
+-- Could NOT find PythonLibs (missing:  PYTHON_LIBRARIES PYTHON_INCLUDE_DIRS) (Required is exact version "3.6.4")
+-- Could NOT find JNI (missing:  JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+-- Could NOT find Matlab (missing:  MATLAB_MEX_SCRIPT MATLAB_INCLUDE_DIRS MATLAB_ROOT_DIR MATLAB_LIBRARIES MATLAB_LIBRARY_DIRS MATLAB_MEXEXT MATLAB_ARCH MATLAB_BIN) 
+-- VTK is not found. Please set -DVTK_DIR in CMake to VTK build directory, or to VTK install subdirectory with VTKConfig.cmake file
+-- Module opencv_shape disabled because opencv_video dependency can't be resolved!
+-- Module opencv_stitching disabled because opencv_features2d dependency can't be resolved!
+-- Module opencv_superres disabled because opencv_video dependency can't be resolved!
+-- Module opencv_videostab disabled because opencv_features2d dependency can't be resolved!
+-- Performing Test HAVE_CXX_WNO_OVERLOADED_VIRTUAL
+-- Performing Test HAVE_CXX_WNO_OVERLOADED_VIRTUAL - Success
+-- Performing Test HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD
+-- Performing Test HAVE_CXX_WNO_UNUSED_PRIVATE_FIELD - Failed
+-- 
+-- General configuration for OpenCV 3.2.0 =====================================
+--   Version control:               unknown
+-- 
+--   Platform:
+--     Timestamp:                   2018-02-25T14:14:43Z
+--     Host:                        Linux 4.13.0-36-generic x86_64
+--     CMake:                       3.5.1
+--     CMake generator:             Unix Makefiles
+--     CMake build tool:            /usr/bin/make
+--     Configuration:               RELEASE
+-- 
+--   C/C++:
+--     Built as dynamic libs?:      NO
+--     C++ Compiler:                /usr/bin/c++  (ver 5.4.0)
+--     C++ flags (Release):         -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+--     C++ flags (Debug):           -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+--     C Compiler:                  /usr/bin/cc
+--     C flags (Release):           -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+--     C flags (Debug):             -fPIC   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -Wno-comment -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+--     Linker flags (Release):
+--     Linker flags (Debug):
+--     ccache:                      NO
+--     Precompiled headers:         YES
+--     Extra dependencies:          /home/suzuki/anaconda3/lib/libjpeg.so /home/suzuki/anaconda3/lib/libpng.so /home/suzuki/anaconda3/envs/cv/lib/libz.so /home/suzuki/anaconda3/lib/libtiff.so stdc++ dl m pthread rt
+--     3rdparty dependencies:       libwebp libjasper IlmImf ippicv
+-- 
+--   OpenCV modules:
+--     To be built:                 core imgproc imgcodecs highgui python2
+--     Disabled:                    calib3d features2d flann ml objdetect photo ts video videoio world
+--     Disabled by dependency:      shape stitching superres videostab
+--     Unavailable:                 cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev java python3 viz
+-- 
+--   GUI: 
+--     QT:                          NO
+--     GTK+:                        NO
+--     GThread :                    NO
+--     GtkGlExt:                    NO
+--     OpenGL support:              NO
+--     VTK support:                 NO
+-- 
+--   Media I/O: 
+--     ZLib:                        /home/suzuki/anaconda3/envs/cv/lib/libz.so (ver 1.2.11)
+--     JPEG:                        /home/suzuki/anaconda3/lib/libjpeg.so (ver 90)
+--     WEBP:                        build (ver 0.3.1)
+--     PNG:                         /home/suzuki/anaconda3/lib/libpng.so (ver 1.6.34)
+--     TIFF:                        /home/suzuki/anaconda3/lib/libtiff.so (ver 42 - 4.0.9)
+--     JPEG 2000:                   build (ver 1.900.1)
+--     OpenEXR:                     build (ver 1.7.1)
+--     GDAL:                        NO
+--     GDCM:                        NO
+-- 
+--   Video I/O:
+--     DC1394 1.x:                  NO
+--     DC1394 2.x:                  NO
+--     FFMPEG:                      NO
+--       avcodec:                   NO
+--       avformat:                  NO
+--       avutil:                    NO
+--       swscale:                   NO
+--       avresample:                NO
+--     GStreamer:                   NO
+--     OpenNI:                      NO
+--     OpenNI PrimeSensor Modules:  NO
+--     OpenNI2:                     NO
+--     PvAPI:                       NO
+--     GigEVisionSDK:               NO
+--     Aravis SDK:                  NO
+--     UniCap:                      NO
+--     UniCap ucil:                 NO
+--     V4L/V4L2:                    NO/YES
+--     XIMEA:                       NO
+--     Xine:                        NO
+--     gPhoto2:                     NO
+-- 
+--   Parallel framework:            pthreads
+-- 
+--   Other third-party libraries:
+--     Use IPP:                     9.0.1 [9.0.1]
+--          at:                     /home/suzuki/opencv/opencv-3.2.0/build/3rdparty/ippicv/ippicv_lnx
+--     Use IPP Async:               NO
+--     Use VA:                      NO
+--     Use Intel VA-API/OpenCL:     NO
+--     Use Lapack:                  NO
+--     Use Eigen:                   NO
+--     Use Cuda:                    NO
+--     Use OpenCL:                  YES
+--     Use OpenVX:                  NO
+--     Use custom HAL:              NO
+-- 
+--   OpenCL:                        <Dynamic loading of OpenCL library>
+--     Include path:                /home/suzuki/opencv/opencv-3.2.0/3rdparty/include/opencl/1.2
+--     Use AMDFFT:                  NO
+--     Use AMDBLAS:                 NO
+-- 
+--   Python 2:
+--     Interpreter:                 /home/suzuki/anaconda3/envs/cv/bin/python2.7 (ver 2.7.14)
+--     Libraries:                   /usr/lib/x86_64-linux-gnu/libpython2.7.so (ver 2.7.14)
+--     numpy:                       /home/suzuki/anaconda3/envs/cv/lib/python2.7/site-packages/numpy/core/include (ver 1.14.1)
+--     packages path:               lib/python2.7/site-packages
+-- 
+--   Python 3:
+--     Interpreter:                 /home/suzuki/anaconda3/bin/python3 (ver 3.6.4)
+--     Libraries:                   NO
+--     numpy:                       /home/suzuki/anaconda3/lib/python3.6/site-packages/numpy/core/include (ver 1.14.0)
+--     packages path:               lib/python3.6/site-packages
+-- 
+--   Python (for build):            /home/suzuki/anaconda3/envs/cv/bin/python2.7
+-- 
+--   Java:
+--     ant:                         NO
+--     JNI:                         NO
+--     Java wrappers:               NO
+--     Java tests:                  NO
+-- 
+--   Matlab:                        Matlab not found or implicitly disabled
+-- 
+--   Documentation:
+--     Doxygen:                     NO
+-- 
+--   Tests and samples:
+--     Tests:                       NO
+--     Performance tests:           NO
+--     C/C++ Examples:              NO
+-- 
+--   Install path:                  /home/suzuki/opencv/3.2-1
+-- 
+--   cvconfig.h is in:              /home/suzuki/opencv/opencv-3.2.0/build
+-- -----------------------------------------------------------------
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/suzuki/opencv/opencv-3.2.0/build
+(cv) suzuki@dynabook:~/opencv/opencv-3.2.0/build$ make
+Scanning dependencies of target libwebp
+[  1%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/io.c.o
+[  1%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/layer.c.o
+[  1%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/vp8.c.o
+[  2%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/alpha.c.o
+[  2%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/frame.c.o
+[  2%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/quant.c.o
+[  3%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/buffer.c.o
+[  3%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/vp8l.c.o
+[  3%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/tree.c.o
+[  4%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/idec.c.o
+[  4%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dec/webp.c.o
+[  4%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/upsampling.c.o
+[  5%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/upsampling_sse2.c.o
+[  5%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/enc_neon.c.o
+[  5%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/enc_sse2.c.o
+[  6%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/dec.c.o
+[  6%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/dec_neon.c.o
+[  6%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/dec_sse2.c.o
+[  6%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/upsampling_neon.c.o
+[  7%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/cpu.c.o
+[  7%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/yuv.c.o
+[  7%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/enc.c.o
+[  8%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/dsp/lossless.c.o
+[  8%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/syntax.c.o
+[  8%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/layer.c.o
+[  9%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/histogram.c.o
+[  9%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/alpha.c.o
+[  9%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/backward_references.c.o
+[ 10%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/frame.c.o
+[ 10%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/config.c.o
+[ 10%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/quant.c.o
+[ 11%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/analysis.c.o
+[ 11%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/filter.c.o
+[ 11%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/iterator.c.o
+[ 12%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/cost.c.o
+[ 12%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/picture.c.o
+[ 12%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/token.c.o
+[ 12%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/webpenc.c.o
+[ 13%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/vp8l.c.o
+[ 13%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/enc/tree.c.o
+[ 13%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/mux/muxread.c.o
+[ 14%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/mux/muxinternal.c.o
+[ 14%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/mux/muxedit.c.o
+[ 14%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/quant_levels_dec.c.o
+[ 15%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/utils.c.o
+[ 15%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/color_cache.c.o
+[ 15%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/quant_levels.c.o
+[ 16%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/rescaler.c.o
+[ 16%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/huffman_encode.c.o
+[ 16%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/huffman.c.o
+[ 17%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/bit_writer.c.o
+[ 17%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/thread.c.o
+[ 17%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/filters.c.o
+[ 17%] Building C object 3rdparty/libwebp/CMakeFiles/libwebp.dir/utils/bit_reader.c.o
+[ 18%] Linking C static library ../lib/liblibwebp.a
+[ 18%] Built target libwebp
+Scanning dependencies of target libjasper
+[ 18%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_dec.c.o
+[ 18%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_init.c.o
+[ 19%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1enc.c.o
+[ 19%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_tsfb.c.o
+[ 19%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_math.c.o
+[ 20%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_tmr.c.o
+[ 20%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2dec.c.o
+[ 20%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_tagtree.c.o
+[ 21%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_bs.c.o
+[ 21%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2enc.c.o
+[ 21%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_getopt.c.o
+[ 22%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_seq.c.o
+[ 22%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqcod.c.o
+[ 22%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1dec.c.o
+[ 23%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_stream.c.o
+[ 23%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_iccdata.c.o
+[ 23%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t1cod.c.o
+[ 23%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_malloc.c.o
+[ 24%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_image.c.o
+[ 24%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_version.c.o
+[ 24%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_cs.c.o
+[ 25%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqenc.c.o
+[ 25%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_qmfb.c.o
+[ 25%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_debug.c.o
+[ 26%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_tvp.c.o
+[ 26%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_util.c.o
+[ 26%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_enc.c.o
+[ 27%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mqdec.c.o
+[ 27%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_cod.c.o
+[ 27%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_mct.c.o
+[ 28%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jp2_enc.c.o
+[ 28%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_string.c.o
+[ 28%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_t2cod.c.o
+[ 29%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_icc.c.o
+[ 29%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jpc_dec.c.o
+[ 29%] Building C object 3rdparty/libjasper/CMakeFiles/libjasper.dir/jas_cm.c.o
+[ 29%] Linking C static library ../lib/liblibjasper.a
+[ 29%] Built target libjasper
+Scanning dependencies of target IlmImf
+[ 29%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Half/half.cpp.o
+[ 29%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Iex/IexThrowErrnoExc.cpp.o
+[ 29%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Iex/IexBaseExc.cpp.o
+[ 30%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadMutex.cpp.o
+[ 30%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadPosix.cpp.o
+[ 30%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadSemaphore.cpp.o
+[ 31%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThread.cpp.o
+[ 31%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadSemaphorePosix.cpp.o
+[ 31%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadSemaphorePosixCompat.cpp.o
+[ 32%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadPool.cpp.o
+[ 32%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmThread/IlmThreadMutexPosix.cpp.o
+[ 32%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Imath/ImathMatrixAlgo.cpp.o
+[ 33%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Imath/ImathColorAlgo.cpp.o
+[ 33%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Imath/ImathFun.cpp.o
+[ 33%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Imath/ImathRandom.cpp.o
+[ 34%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/Imath/ImathVec.cpp.o
+[ 34%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfAcesFile.cpp.o
+[ 34%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfRationalAttribute.cpp.o
+[ 34%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfFloatAttribute.cpp.o
+[ 35%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfRgbaFile.cpp.o
+[ 35%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfHeader.cpp.o
+[ 35%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfLineOrderAttribute.cpp.o
+[ 36%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfChannelList.cpp.o
+[ 36%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTimeCodeAttribute.cpp.o
+[ 36%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTiledOutputFile.cpp.o
+[ 37%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfOpaqueAttribute.cpp.o
+[ 37%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfIntAttribute.cpp.o
+[ 37%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfFrameBuffer.cpp.o
+[ 38%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfAttribute.cpp.o
+[ 38%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTestFile.cpp.o
+[ 38%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfZipCompressor.cpp.o
+[ 39%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTiledMisc.cpp.o
+[ 39%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfMatrixAttribute.cpp.o
+[ 39%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfOutputFile.cpp.o
+[ 40%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfIO.cpp.o
+[ 40%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfHuf.cpp.o
+[ 40%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfVersion.cpp.o
+[ 40%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfKeyCode.cpp.o
+[ 41%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfRgbaYca.cpp.o
+[ 41%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfStdIO.cpp.o
+[ 41%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfChannelListAttribute.cpp.o
+[ 42%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfLut.cpp.o
+[ 42%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfPreviewImage.cpp.o
+[ 42%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfCompressor.cpp.o
+[ 43%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfWav.cpp.o
+[ 43%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfPizCompressor.cpp.o
+[ 43%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfPxr24Compressor.cpp.o
+[ 44%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTiledRgbaFile.cpp.o
+[ 44%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfEnvmap.cpp.o
+[ 44%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfMultiView.cpp.o
+[ 45%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfStringVectorAttribute.cpp.o
+[ 45%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfCRgbaFile.cpp.o
+[ 45%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfRational.cpp.o
+[ 46%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfStringAttribute.cpp.o
+[ 46%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfScanLineInputFile.cpp.o
+[ 46%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfThreading.cpp.o
+[ 46%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfB44Compressor.cpp.o
+[ 47%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfBoxAttribute.cpp.o
+[ 47%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfDoubleAttribute.cpp.o
+[ 47%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTiledInputFile.cpp.o
+[ 48%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfStandardAttributes.cpp.o
+[ 48%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfCompressionAttribute.cpp.o
+[ 48%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfRleCompressor.cpp.o
+[ 49%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfChromaticities.cpp.o
+[ 49%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfEnvmapAttribute.cpp.o
+[ 49%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfInputFile.cpp.o
+[ 50%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfPreviewImageAttribute.cpp.o
+[ 50%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTileOffsets.cpp.o
+[ 50%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTimeCode.cpp.o
+[ 51%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfTileDescriptionAttribute.cpp.o
+[ 51%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfVecAttribute.cpp.o
+[ 51%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfFramesPerSecond.cpp.o
+[ 52%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfChromaticitiesAttribute.cpp.o
+[ 52%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfKeyCodeAttribute.cpp.o
+[ 52%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfMisc.cpp.o
+[ 52%] Building CXX object 3rdparty/openexr/CMakeFiles/IlmImf.dir/IlmImf/ImfConvert.cpp.o
+[ 53%] Linking CXX static library ../lib/libIlmImf.a
+[ 53%] Built target IlmImf
+Scanning dependencies of target opencv_core_pch_dephelp
+[ 53%] Building CXX object modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o
+[ 53%] Linking CXX static library ../../lib/libopencv_core_pch_dephelp.a
+[ 53%] Built target opencv_core_pch_dephelp
+Scanning dependencies of target pch_Generate_opencv_core
+[ 54%] Generating precomp.hpp
+[ 54%] Generating precomp.hpp.gch/opencv_core_RELEASE.gch
+[ 54%] Built target pch_Generate_opencv_core
+[ 54%] Generating opencl_kernels_core.cpp, opencl_kernels_core.hpp
+Scanning dependencies of target opencv_core
+[ 54%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o
+[ 55%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o
+[ 55%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs_core.cpp.o
+[ 55%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o
+[ 56%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o
+[ 56%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/algorithm.cpp.o
+[ 56%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o
+[ 57%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o
+[ 57%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o
+[ 57%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/va_intel.cpp.o
+[ 58%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix_decomp.cpp.o
+[ 58%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/arithm.cpp.o
+[ 58%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o
+[ 59%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o
+[ 59%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o
+[ 59%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/ovx.cpp.o
+[ 59%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o
+[ 60%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o
+[ 60%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o
+[ 60%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o
+[ 61%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o
+[ 61%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o
+[ 61%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o
+[ 62%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/hal_internal.cpp.o
+[ 62%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o
+[ 62%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o
+[ 63%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/split.cpp.o
+[ 63%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/merge.cpp.o
+[ 63%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o
+[ 64%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o
+[ 64%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o
+[ 64%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o
+[ 65%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o
+[ 65%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o
+[ 65%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/array.cpp.o
+[ 65%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o
+[ 66%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o
+[ 66%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o
+[ 66%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o
+[ 67%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/parallel_pthreads.cpp.o
+[ 67%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o
+[ 67%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o
+[ 68%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o
+[ 68%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o
+[ 68%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o
+[ 69%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o
+[ 69%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o
+[ 69%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o
+[ 70%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/alloc.cpp.o
+[ 70%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o
+[ 70%] Building CXX object modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o
+[ 71%] Linking CXX static library ../../lib/libopencv_core.a
+[ 71%] Built target opencv_core
+Scanning dependencies of target opencv_imgproc_pch_dephelp
+[ 72%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc_pch_dephelp.dir/opencv_imgproc_pch_dephelp.cxx.o
+[ 72%] Linking CXX static library ../../lib/libopencv_imgproc_pch_dephelp.a
+[ 72%] Built target opencv_imgproc_pch_dephelp
+Scanning dependencies of target pch_Generate_opencv_imgproc
+[ 73%] Generating precomp.hpp
+[ 73%] Generating precomp.hpp.gch/opencv_imgproc_RELEASE.gch
+[ 73%] Built target pch_Generate_opencv_imgproc
+[ 74%] Generating opencl_kernels_imgproc.cpp, opencl_kernels_imgproc.hpp
+Scanning dependencies of target opencv_imgproc
+[ 74%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o
+[ 74%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o
+[ 75%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o
+[ 75%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o
+[ 75%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o
+[ 76%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o
+[ 76%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o
+[ 76%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o
+[ 77%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o
+[ 77%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o
+[ 77%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o
+[ 77%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o
+[ 78%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o
+[ 78%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o
+[ 78%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o
+[ 79%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o
+[ 79%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o
+[ 79%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o
+[ 80%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o
+[ 80%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o
+[ 80%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o
+[ 81%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o
+[ 81%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o
+[ 81%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o
+[ 82%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o
+[ 82%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o
+[ 82%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/blend.cpp.o
+[ 83%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o
+[ 83%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o
+[ 83%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o
+[ 83%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o
+[ 84%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o
+[ 84%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o
+[ 84%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o
+[ 85%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o
+[ 85%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o
+[ 85%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/spatialgradient.cpp.o
+[ 86%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o
+[ 86%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/main.cpp.o
+[ 86%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o
+[ 87%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o
+[ 87%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o
+[ 87%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o
+[ 88%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o
+[ 88%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o
+[ 88%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o
+[ 89%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o
+[ 89%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o
+[ 89%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o
+[ 89%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o
+[ 90%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o
+[ 90%] Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o
+[ 90%] Linking CXX static library ../../lib/libopencv_imgproc.a
+[ 90%] Built target opencv_imgproc
+Scanning dependencies of target opencv_imgcodecs_pch_dephelp
+[ 90%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs_pch_dephelp.dir/opencv_imgcodecs_pch_dephelp.cxx.o
+[ 90%] Linking CXX static library ../../lib/libopencv_imgcodecs_pch_dephelp.a
+[ 90%] Built target opencv_imgcodecs_pch_dephelp
+Scanning dependencies of target pch_Generate_opencv_imgcodecs
+[ 90%] Generating precomp.hpp
+[ 91%] Generating precomp.hpp.gch/opencv_imgcodecs_RELEASE.gch
+[ 91%] Built target pch_Generate_opencv_imgcodecs
+Scanning dependencies of target opencv_imgcodecs
+[ 92%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/loadsave.cpp.o
+[ 92%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/utils.cpp.o
+[ 92%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o
+[ 93%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o
+[ 93%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o
+[ 93%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o
+[ 94%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o
+[ 94%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o
+[ 94%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pam.cpp.o
+[ 95%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o
+[ 95%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o
+[ 95%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o
+[ 96%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o
+[ 96%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o
+[ 96%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdcm.cpp.o
+[ 96%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o
+[ 97%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o
+[ 97%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o
+[ 97%] Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/exif.cpp.o
+[ 98%] Linking CXX static library ../../lib/libopencv_imgcodecs.a
+[ 98%] Built target opencv_imgcodecs
+Scanning dependencies of target opencv_highgui_pch_dephelp
+[ 98%] Building CXX object modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o
+[ 98%] Linking CXX static library ../../lib/libopencv_highgui_pch_dephelp.a
+[ 98%] Built target opencv_highgui_pch_dephelp
+Scanning dependencies of target pch_Generate_opencv_highgui
+[ 98%] Generating precomp.hpp
+[ 98%] Generating precomp.hpp.gch/opencv_highgui_RELEASE.gch
+[ 98%] Built target pch_Generate_opencv_highgui
+Scanning dependencies of target opencv_highgui
+[ 98%] Building CXX object modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o
+[ 99%] Linking CXX static library ../../lib/libopencv_highgui.a
+[ 99%] Built target opencv_highgui
+[ 99%] Generating pyopencv_generated_include.h, pyopencv_generated_funcs.h, pyopencv_generated_types.h, pyopencv_generated_type_reg.h, pyopencv_generated_ns_reg.h
+Scanning dependencies of target opencv_python2
+[100%] Building CXX object modules/python2/CMakeFiles/opencv_python2.dir/__/src2/cv2.cpp.o
+In file included from /home/suzuki/anaconda3/envs/cv/lib/python2.7/site-packages/numpy/core/include/numpy/ndarraytypes.h:4:0,
+                 from /home/suzuki/anaconda3/envs/cv/lib/python2.7/site-packages/numpy/core/include/numpy/ndarrayobject.h:18,
+                 from /home/suzuki/opencv/opencv-3.2.0/modules/python/src2/cv2.cpp:10:
+/home/suzuki/anaconda3/envs/cv/lib/python2.7/site-packages/numpy/core/include/numpy/npy_common.h:17:5: warning: "NPY_INTERNAL_BUILD" is not defined [-Wundef]
+ #if NPY_INTERNAL_BUILD
+     ^
+[100%] Linking CXX shared module ../../lib/cv2.so
+[100%] Built target opencv_python2
+(cv) suzuki@dynabook:~/opencv/opencv-3.2.0/build$ make install
+[ 18%] Built target libwebp
+[ 29%] Built target libjasper
+[ 53%] Built target IlmImf
+[ 53%] Built target opencv_core_pch_dephelp
+[ 54%] Built target pch_Generate_opencv_core
+[ 71%] Built target opencv_core
+[ 72%] Built target opencv_imgproc_pch_dephelp
+[ 73%] Built target pch_Generate_opencv_imgproc
+[ 90%] Built target opencv_imgproc
+[ 90%] Built target opencv_imgcodecs_pch_dephelp
+[ 91%] Built target pch_Generate_opencv_imgcodecs
+[ 98%] Built target opencv_imgcodecs
+[ 98%] Built target opencv_highgui_pch_dephelp
+[ 98%] Built target pch_Generate_opencv_highgui
+[ 99%] Built target opencv_highgui
+[100%] Built target opencv_python2
+Install the project...
+-- Install configuration: "RELEASE"
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/3rdparty/lib/libippicv.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/cvconfig.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/opencv_modules.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/lib/pkgconfig/opencv.pc
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/OpenCVModules.cmake
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/OpenCVModules-release.cmake
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/OpenCVConfig-version.cmake
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/OpenCVConfig.cmake
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/3rdparty/lib/liblibwebp.a
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/3rdparty/lib/liblibjasper.a
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/3rdparty/lib/libIlmImf.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cvaux.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cvaux.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cv.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cxcore.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/ml.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cxeigen.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cxmisc.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/highgui.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cxcore.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cv.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv/cvwimage.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/opencv.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/lib/libopencv_core.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/saturate_cast.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/warp_shuffle.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/filters.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/type_traits.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/scan.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/transform.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/dynamic_smem.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/simd_functions.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/vec_traits.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/common.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/vec_math.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/funcattrib.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/functional.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/vec_distance.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/limits.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/block.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/datamov_utils.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/utility.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/border_interpolate.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/reduce.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/emulation.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/color.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/warp.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/warp_reduce.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/type_traits_detail.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/color_detail.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/vec_distance_detail.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/reduce.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/transform_detail.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda/detail/reduce_key_val.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cvstd.inl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/persistence.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/types.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/base.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/bufferpool.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/optim.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/ovx.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/private.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/operations.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda_stream_accessor.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/core.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda_types.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/private.cuda.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/directx.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/traits.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/version.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/neon_utils.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/fast_math.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/wimage.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/ptr.inl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/sse_utils.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda.inl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/mat.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cuda.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/utility.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/mat.inl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/eigen.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/saturate.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/ippasync.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/va_intel.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/ocl_genbase.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cvstd.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/affine.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/opengl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/matx.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/ocl.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/types_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/cvdef.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/core_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/intrin_neon.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/intrin.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/hal.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/intrin_sse.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/intrin_cpp.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/core/hal/interface.h
+-- Installing: /home/suzuki/opencv/3.2-1/lib/libopencv_imgproc.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/imgproc.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/types_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/imgproc_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/hal/hal.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/hal/interface.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgproc/detail/distortion_model.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/lib/libopencv_imgcodecs.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgcodecs.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgcodecs/imgcodecs.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgcodecs/imgcodecs_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/imgcodecs/ios.h
+-- Installing: /home/suzuki/opencv/3.2-1/lib/libopencv_highgui.a
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/highgui.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/highgui/highgui.hpp
+-- Installing: /home/suzuki/opencv/3.2-1/include/opencv2/highgui/highgui_c.h
+-- Installing: /home/suzuki/opencv/3.2-1/lib/python2.7/site-packages/cv2.so
+-- Set runtime path of "/home/suzuki/opencv/3.2-1/lib/python2.7/site-packages/cv2.so" to "/home/suzuki/opencv/3.2-1/lib:/home/suzuki/anaconda3/lib:/home/suzuki/anaconda3/envs/cv/lib"
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_righteye_2splits.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_profileface.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalcatface_extended.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalcatface.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_smile.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_licence_plate_rus_16stages.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_eye_tree_eyeglasses.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalface_alt_tree.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_lefteye_2splits.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_lowerbody.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_upperbody.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_fullbody.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_eye.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/haarcascades/haarcascade_russian_plate_number.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/lbpcascades/lbpcascade_frontalface.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/lbpcascades/lbpcascade_frontalcatface.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/lbpcascades/lbpcascade_profileface.xml
+-- Installing: /home/suzuki/opencv/3.2-1/share/OpenCV/lbpcascades/lbpcascade_silverware.xml
+(cv) suzuki@dynabook:~/opencv/opencv-3.2.0/build$ conda list
+# packages in environment at /home/suzuki/anaconda3/envs/cv:
+#
+# Name                    Version                   Build  Channel
+ca-certificates           2017.08.26           h1d4fec5_0  
+certifi                   2018.1.18                py27_0  
+intel-openmp              2018.0.0             hc7b2577_8  
+libedit                   3.1                  heed3624_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 7.2.0                h7cc24e2_2  
+libgfortran-ng            7.2.0                h9f7466a_2  
+libstdcxx-ng              7.2.0                h7a57d05_2  
+mkl                       2018.0.1             h19d6760_4  
+ncurses                   6.0                  h9df7e31_2  
+numpy                     1.14.1           py27h3dfced4_1  
+openssl                   1.0.2n               hb7f436b_0  
+pip                       9.0.1            py27ha730c48_4  
+python                    2.7.14              h1571d57_29  
+readline                  7.0                  ha6073c6_4  
+setuptools                38.5.1                   py27_0  
+sqlite                    3.22.0               h1bed415_0  
+tk                        8.6.7                hc745277_3  
+wheel                     0.30.0           py27h2bc6bb2_1  
+xz                        5.2.3                h55aa19d_2  
+zlib                      1.2.11               ha838bed_2  
+(cv) suzuki@dynabook:~/opencv/opencv-3.2.0/build$ ls -la ../../3.2-1/lib/python2.7/site-packages
+total 38944
+drwxrwxr-x 2 suzuki suzuki     4096  2月 25 23:23 .
+drwxrwxr-x 3 suzuki suzuki     4096  2月 25 23:23 ..
+-rw-r--r-- 1 suzuki suzuki 39867680  2月 25 23:21 cv2.so
+
+
