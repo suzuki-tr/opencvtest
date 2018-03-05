@@ -62,3 +62,46 @@
 		* conda install python=2.7
 
 
+
+# Compile OpenCV with VIDEO feature for Ubuntu
+https://github.com/menpo/conda-opencv
+
+$ git clone https://github.com/conda-recipes
+$ cd conda-recipes
+
+* if ffmpeg isn't insatlled , 'conda install ffmpeg'
+* if libgtk2.0-dev pkg-condig aren't installed, install them.
+	* $ sudo apt update
+	* $ sudo apt install libgtk2.0-dev pkg-config
+
+* modify meta.yaml
+	* comment out 'patches' section
+	* modify ffmpeg version 2.8 -> x.x
+* modify build.sh
+	* -DWITH_GTK=1
+	* -DWITH_FFMPEG=1
+
+$ conda build opencv
+
+* check build log
+> --   OpenCV modules:
+> --     To be built:                 core flann hdf imgproc ml photo reg surface_matching video dnn fuzzy imgcodecs shape videoio highgui objdetect plot superres xobjdetect xphoto bgsegm bioinspired dpm face features2d line_descriptor saliency text calib3d ccalib datasets rgbd stereo tracking videostab xfeatures2d ximgproc aruco optflow phase_unwrapping stitching structured_light python3
+> --   GUI: 
+> --     GTK+ 2.x:                    YES (ver 2.24.30)
+> --     GThread :                    YES (ver 2.48.2)
+
+$ conda install opencv=3.2.0 --use-local
+
+* check install
+
+$ conda list
+> opencv                    3.2.0               np111py36_0    local
+
+
+## trouble shoot 
+
+* zipfile.BadZipFile: File is not a zip file
+environment location: /home/suzuki/anaconda3/conda-bld/opencv_1520032161283/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+ -> reinstall anaconda -> not solve
+
+
