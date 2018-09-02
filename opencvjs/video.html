@@ -1,0 +1,93 @@
+<!-- https://docs.opencv.org/3.4.0/dd/d00/tutorial_js_video_display.html -->
+<html>
+</html>
+<head>
+    <style>
+        #container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        #canvasOutput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #videoInput {
+            position: absolute;
+            height: 90%;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <p id="status">OpenCV.js is loading...</p>
+    <div id="container">
+        <video id="videoInput" autoplay="1"></video>
+        <canvas id="canvasOutput"></canvas>        
+    </div>
+
+
+    <script type="text/javascript">
+
+        //https://developer.mozilla.org/ja/docs/Web/API/MediaDevices/getUserMedia
+        const medias = {audio : false, video : {
+            facingMode : { exact : "environment" },// rear camera
+            width: { ideal: 1920 },//1920,1280
+            height: { ideal: 1080 },//1080,720
+        }};
+    
+        var video = document.getElementById('videoInput');
+        video.addEventListener("click", function() {
+            take_picture()
+        });
+
+        var canvas = document.getElementById('canvasOutput');
+        var ctx = canvas.getContext('2d');
+        canvas.addEventListener("click", function() {
+            clear_picture()
+        });
+
+        function take_picture() {
+            var vw = video.videoWidth;
+            var vh = video.videoHeight;
+            var ow = video.offsetWidth;
+            var oh = video.offsetHeight;
+            canvas.setAttribute("width", ow);
+            canvas.setAttribute("height", oh);
+            ctx.drawImage(video, 0, 0, ow, oh);
+            document.getElementById('status').innerHTML = 
+                "video size:" + vw + ',' + vh +
+                ", offset size:" + ow + ',' + oh ;
+        }
+
+        function clear_picture() {
+            console.log('clear_picture');
+            canvas.setAttribute("width", 0);
+            canvas.setAttribute("height", 0);
+            //canvas.setAttribute("hidden", "hidden");
+            var w = video.videoWidth;
+            var h = video.videoHeight;
+            document.getElementById('status').innerHTML = "video size:" + w + ',' + h;
+        }
+
+        if (navigator.getUserMedia) {
+            navigator.getUserMedia(medias,
+                function(stream) { // for success case
+                    console.log(stream);
+                    video.src = window.URL.createObjectURL(stream);
+                },
+                function(err) { // for error case
+                    console.log(err);
+                }
+            );
+        }else{
+            alert("Your browser does not seem to support getUserMedia, using a fallback video instead.");
+        }
+
+
+    </script>
+</body>
+</html>
+

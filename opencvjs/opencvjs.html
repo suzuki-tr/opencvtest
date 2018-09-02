@@ -1,0 +1,107 @@
+<!-- https://docs.opencv.org/3.4.0/dd/d00/tutorial_js_video_display.html -->
+<html>
+</html>
+<head>
+    <style>
+        #container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        #canvasOutput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #canvasResult {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #videoInput {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            transform-origin: left top;
+            transform: scale(.2);
+        }
+    </style>
+</head>
+<body>
+    <p id="status">OpenCV.js is loading...</p>
+    <div id="container">
+        <canvas id="canvasOutput"></canvas>
+        <canvas id="canvasResult"></canvas>
+        <video id="videoInput" autoplay="1"></video>
+    </div>
+
+
+    <script type="text/javascript">
+
+        //https://developer.mozilla.org/ja/docs/Web/API/MediaDevices/getUserMedia
+        const medias = {audio : false, video : {
+            facingMode : { exact : "environment" },// rear camera
+            width: { ideal: 1920 },//3840,1920,1280
+            height: { ideal: 1080 },//2160,1080,720
+        }},
+        video = document.getElementById('videoInput'),
+        canvas = document.getElementById('canvasOutput'),
+        resultcanvas = document.getElementById('canvasResult'),
+        ctx = canvas.getContext('2d'),
+        resultctx = resultcanvas.getContext('2d');
+
+        canvas.addEventListener("click", function() {
+            //alert('clicked canvas');
+            resultcanvas.width = canvas.width;
+            resultcanvas.height = canvas.height;
+            imgData = ctx.getImageData(0, 0, canvas.width,  canvas.height);
+            try{
+                let src = cv.matFromImageData(imgData);
+                let dst = new cv.Mat();
+                cv.cvtColor(src, dst, cv.COLOR_RGBA2GRAY);
+                cv.imshow('canvasResult', dst);
+                dst.delete();
+                src.delete();
+            } catch (err) {
+                alert(err);
+            }
+        });
+
+        resultcanvas.addEventListener("click", function() {
+            resultcanvas.width = 0;
+            resultcanvas.height = 0;
+        });
+
+        if (navigator.getUserMedia) {
+            navigator.getUserMedia(medias,
+                function(stream) { // for success case
+                    video.src = window.URL.createObjectURL(stream);
+                },
+                function(err) { // for error case
+                    alert(err);
+                }
+            );
+            requestAnimationFrame(draw);
+            //https://developer.mozilla.org/ja/docs/Web/API/Window/requestAnimationFrame
+
+        }else{
+            alert("Your browser does not seem to support getUserMedia, using a fallback video instead.");
+        }
+
+        function draw() {
+            canvas.width  = window.innerWidth*0.9;
+            canvas.height = window.innerHeight*0.9;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            requestAnimationFrame(draw);
+        }
+
+        function onOpenCvReady() {
+            document.getElementById('status').innerHTML = "OpenCV.js is ready";
+        }
+
+    </script>
+    <script async src="opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+    
+</body>
+</html>
+
